@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap");
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.7;
+  color: #636886;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  background: #31231E;
+  color: #fff;
+  font-size: 14px;
+}
+
+.top .container {
+  max-width: 1350px;
+}
+
+.top li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.top a {
+  color: #fff;
+}
+
+.top .social {
+  font-size: 22px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #31231E;
+  text-transform: capitalize;
+  padding: 0.5rem 0.9rem;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.bg-light {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #d7d8d9), color-stop(80%, #fff));
+  background: linear-gradient(#d7d8d9 20%, #fff 80%);
+  padding-bottom: 80px;
+}
+
+.banner {
+  position: relative;
+  background: url(../img/topography-background.png) #d9e7db;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: #ccc;
+  bottom: 0;
+  left: 0;
+}
+
+.banner img {
+  position: relative;
+  top: -60px;
+  z-index: 999;
+}
+
+.about {
+  padding: 150px 0;
+}
+
+.about h1 {
+  color: #D59B2D;
+  font-size: 2.80rem;
+  position: relative;
+  font-weight: 800;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #D59B2D;
+  border-color: #D59B2D;
+  padding: 14px 43px;
+  border-radius: 33px;
+}
+
+.events {
+  background: #F8F4F3;
+}
+
+.events h2 {
+  color: #D59B2D;
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.events .event-wrap-single {
+  background: #D9E7DB;
+  border-radius: 5px;
+}
+
+.events .event-wrap-single h3 {
+  font-size: 28px;
+  color: #31231E;
+}
+
+.linetitle {
+  position: relative;
+}
+
+.linetitle:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 41px;
+  background: #477763;
+  top: 50%;
+  left: -60px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.date-wrap {
+  margin-top: -50px;
+  pointer-events: none;
+  margin-bottom: 30px;
+}
+
+.date-box {
+  min-width: 90px;
+  min-height: 90px;
+  border-radius: 7px;
+  background: #D59B2D;
+  color: #fff5ec;
+  font-size: 30px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  margin-right: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  max-width: 90px;
+  margin-right: 20px;
+}
+
+.date-box span {
+  color: #31231E;
+  font-size: 18px;
+}
+
+.meeting {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/callout_bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/callout_bg.jpg);
+  padding: 100px 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.meeting .pattern-green {
+  background-color: #477763;
+}
+
+.meeting .pattern-orange {
+  background: #D59B2D;
+}
+
+.abc, .meeting .pattern-green, .meeting .pattern-orange {
+  background-image: url(../img/topography-background.png);
+  background-repeat: repeat;
+  padding: 25px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.commitee {
+  background: url(../img/hands_bg.png) #F8F4F3 no-repeat;
+  background-position: bottom center;
+  background-size: 80%;
+  padding: 50px 0 250px 0;
+}
+
+.commitee .team-section-wrap {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 97px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 97px 0px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem;
+  border-radius: 7px;
+  margin: 2rem 0;
+}
+
+.faq {
+  background: url(../img/topography-background.png) #D59B2D;
+}
+
+.faq .faq_top {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(#20283f)), url(../img/callout_bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #20283f), url(../img/callout_bg.jpg);
+  color: #fff;
+  position: relative;
+  top: -100px;
+  padding: 50px;
+}
+
+.counter-style-box {
+  padding: 1.7rem;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 147px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 147px 0px rgba(0, 0, 0, 0.07);
+  color: #6e7c90;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #31231E;
+}
+
+.counter-style-box .counter-txt {
+  color: #27304b;
+  line-height: 1;
+  font-size: 3rem;
+  position: relative;
+  font-weight: 800;
+  z-index: 2;
+  padding: 0 0 0 20px;
+  margin: 1.4rem 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.counter-style-box .counter-txt:before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  height: 70px;
+  width: 70px;
+  background: #D59B2D;
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0.2;
+}
+
+.event {
+  position: relative;
+}
+
+.event img {
+  width: 70%;
+}
+
+.event .post-content {
+  background-color: #fff;
+  padding: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  -webkit-box-shadow: 0px 0px 10px #000;
+          box-shadow: 0px 0px 10px #000;
+  width: 60%;
+}
+
+.footer-bottom {
+  background: #050505;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-top {
+  background: #000000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.accordion-item {
+  background: transparent;
+}
+
+.accordion-button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+}
+
+.owl-carousel .owl-item img {
+  width: 70%;
+}
+
+@media (max-width: 500px) {
+  .about {
+    padding: 0;
+  }
+  .faq .col-lg-3 {
+    margin: 20px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

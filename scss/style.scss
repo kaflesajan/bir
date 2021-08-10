@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap');
+$brand: #31231E;
+$w: #fff;
+$primary: #D59B2D;
+
+body
+{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.7;
+    color: rgb(99, 104, 134);
+}
+ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a 
+{
+    text-decoration: none;
+}
+.top 
+{
+    background: $brand;
+    color: $w;
+    font-size: 14px;
+    .container 
+    {
+        max-width: 1350px;
+    }
+    li 
+    {
+        display: inline-block;
+        padding: 5px;
+    }
+    a 
+    {
+        color: $w;
+    }
+    .social
+    {
+        font-size: 22px;
+    }
+}
+
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: $brand;
+    text-transform: capitalize;
+    padding: 0.5rem 0.9rem;
+    font-weight: 700;
+    font-size: 16px;
+}
+.bg-light {
+    background: linear-gradient(#d7d8d9 20%,#fff 80%);
+    padding-bottom: 80px;
+}
+.banner 
+{
+    position: relative;
+    &::after
+    {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background: #ccc;
+        bottom: 0;
+        left: 0;
+    }
+    background: url(../img/topography-background.png) rgb(217, 231, 219);
+    img 
+    {
+        position: relative;
+        top: -60px;
+        z-index: 999;
+
+    }
+}
+.about
+{
+    padding: 150px 0;
+    h1 
+    {
+        color: $primary;
+        font-size: 2.80rem;
+        position: relative;
+        font-weight: 800;
+        z-index: 1;
+        margin-bottom: 3rem;
+    }
+}
+.btn-warning
+{
+    color: $w;
+background-color: $primary;
+border-color: $primary;
+padding: 14px 43px;
+border-radius: 33px;
+}
+.events
+{
+    background: #F8F4F3;
+   
+    h2 
+    {
+        color: $primary;
+        font-size: 43px;
+        font-weight: bold;
+    }
+    .event-wrap-single
+    {
+  
+    background: #D9E7DB;
+    border-radius: 5px;
+    h3 
+    {
+        font-size: 28px;
+        color: $brand;
+    }
+    }
+}
+
+.linetitle 
+{
+    position: relative;
+    &:before 
+    {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 41px;
+        background: #477763;
+        top: 50%;
+        left: -60px;
+        transform: translateY(-50%);
+    }
+}
+.date-wrap {
+    margin-top: -50px;
+    pointer-events: none;
+    margin-bottom: 30px;
+}
+.date-box
+{
+    min-width: 90px;
+min-height: 90px;
+border-radius: 7px;
+background: $primary;
+color: #fff5ec;
+font-size: 30px;
+line-height: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+margin-right: 5px;
+flex-flow: column;
+max-width: 90px;
+margin-right: 20px;
+span 
+{
+    color: $brand;
+    font-size: 18px;
+}
+}
+.meeting 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/callout_bg.jpg);
+    padding: 100px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    .pattern-green 
+    {
+         @extend .abc;
+        background-color: #477763;
+        
+    }
+    .pattern-orange 
+    {
+        background: #D59B2D;
+        @extend .abc;
+       
+    }
+}
+
+.abc
+{
+    background-image: url(../img/topography-background.png);
+    background-repeat: repeat;
+    padding: 25px;
+    border-radius: 5px;
+    color: $w;
+    margin:20px 0;
+}
+.commitee
+{
+    background: url(../img/hands_bg.png) #F8F4F3 no-repeat;
+    background-position: bottom center;
+    background-size: 80%;
+    padding: 50px 0 250px 0;
+   
+    .team-section-wrap 
+    {
+        background: #fff;
+        box-shadow: 0px 0px 97px 0px rgba(0, 0, 0, 0.12);
+        padding: 1.5rem;
+        border-radius: 7px;
+        margin: 2rem 0;
+    
+    }
+}
+
+.faq
+{
+     background: url(../img/topography-background.png) $primary;
+     .faq_top
+     {
+         background: linear-gradient(rgba(0,0,0, 0.5),#20283f,), url(../img/callout_bg.jpg);
+         color: $w;
+         position: relative;
+         top: -100px;
+         padding: 50px;
+     }
+}
+
+
+.counter-style-box {
+    padding: 1.7rem;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: $w;
+    box-shadow: 0px 0px 147px 0px rgba(0, 0, 0, 0.07);
+    color: #6e7c90;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $brand;
+    .counter-txt {
+        color: #27304b;
+        line-height: 1;
+        font-size: 3rem;
+        position: relative;
+        font-weight: 800;
+        z-index: 2;
+        padding: 0 0 0 20px;
+        margin: 1.4rem 0;
+        font-family: 'Playfair Display', serif;
+        &:before {
+            position: absolute;
+            content: "";
+            top: -5px;
+            left: 0;
+            height: 70px;
+            width: 70px;
+            background: #D59B2D;
+            z-index: -1;
+            border-radius: 10px;
+            opacity: 0.2;
+           }
+       }
+}
+.event 
+{
+    position: relative;
+    img 
+    {
+        width: 70%;
+    }
+    .post-content
+    {
+        background-color: $w;
+        padding: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 30%;
+        box-shadow: 0px 0px 10px #000;
+        width: 60%;
+    }
+}
+
+.footer-bottom
+{
+    background: #050505;
+    color: $w;
+    padding: 20px 0;
+}
+.footer-top 
+{
+    background: #000000;
+    color: $w;
+    padding: 40px 0;
+}
+.accordion-item
+{
+    background: transparent;
+}
+.accordion-button
+{
+    background: transparent;
+    color: $w;
+    border: none;
+    font-size: 22px;
+}
+.owl-carousel .owl-item img
+{
+    width: 70%;
+}
+
+@media(max-width: 500px)
+{ 
+    .about{ padding: 0;}
+    .faq .col-lg-3{ margin: 20px 0;}
+}
